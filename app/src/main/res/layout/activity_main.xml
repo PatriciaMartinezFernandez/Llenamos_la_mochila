@@ -5,15 +5,80 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtContenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtContenido"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbGorras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:text="@string/cbGorras" />
+
+        <CheckBox
+            android:id="@+id/cbBanadores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:text="@string/cbBanadores" />
+
+        <CheckBox
+            android:id="@+id/cbCamisetas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:text="@string/cbCamisetas" />
+
+        <CheckBox
+            android:id="@+id/cbZapatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:text="@string/cbZapatos" />
+
+        <CheckBox
+            android:id="@+id/cbPantalones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:text="@string/cbPantalones" />
+
+        <CheckBox
+            android:id="@+id/cbLibros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:text="@string/cbLibros" />
+
+        <TextView
+            android:id="@+id/tvPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/btnVaciarMochila"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:text="@string/btnVaciarMochila" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
